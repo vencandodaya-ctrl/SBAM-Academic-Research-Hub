@@ -1,0 +1,15 @@
+/* Scrollbar အမဲကြောင်း ဖျောက်သည့် CSS */
+div, section, div[class*="filter"], div[class*="scroll"], div[class*="category"] {
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE/Edge */
+}
+
+/* Chrome, Safari, Mobile Browsers အတွက် Scrollbar ဖျောက်ရန် */
+div::-webkit-scrollbar,
+section::-webkit-scrollbar,
+div[class*="filter"]::-webkit-scrollbar,
+div[class*="scroll"]::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
